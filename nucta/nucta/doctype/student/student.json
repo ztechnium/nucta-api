@@ -58,6 +58,7 @@
    "label": "Student Name"
   },
   {
+   "columns": 1,
    "fieldname": "nu_id",
    "fieldtype": "Data",
    "in_filter": 1,
@@ -140,7 +141,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Last Enrollment Status",
-   "options": "\nActive\nGraduated\nGraduation Requests\nInactive\nNo Show\nProgram Withdrawal\nSemester Withdrawal\nTerminated\nWithdrawn"
+   "options": "\nActive\nGraduated\nGraduation Requests\nInactive\nNo Show\nProgram Withdrawal\nSemester Withdrawal\nTerminated\nWithdrawn\nSemeter Withdrawal\nSemester Withdrawal"
   },
   {
    "fieldname": "last_enrollment_year",
@@ -246,7 +247,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2024-10-31 14:53:04.389369",
+ "modified": "2024-11-09 19:08:44.864605",
  "modified_by": "Administrator",
  "module": "Nucta",
  "name": "Student",

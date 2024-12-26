@@ -30,7 +30,7 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Semester Season",
-   "options": "\nSPRG\nFALL\nSUMMER",
+   "options": "\nSPRG\nFALL\nSUMMER\nWINTER",
    "reqd": 1,
    "set_only_once": 1
   },
@@ -52,8 +52,7 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Previous Semester",
-   "options": "Semester",
-   "reqd": 1
+   "options": "Semester"
   },
   {
    "default": "0",
@@ -64,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-31 14:50:21.330894",
+ "modified": "2024-11-09 21:51:14.772166",
  "modified_by": "Administrator",
  "module": "Nucta",
  "name": "Semester",

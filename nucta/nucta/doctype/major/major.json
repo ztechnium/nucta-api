@@ -5,6 +5,7 @@
  "autoname": "field:major",
  "creation": "2024-09-17 12:38:06.279762",
  "doctype": "DocType",
+ "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
   "major",
@@ -26,7 +27,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-31 14:49:26.536203",
+ "modified": "2024-11-10 12:14:58.045654",
  "modified_by": "Administrator",
  "module": "Nucta",
  "name": "Major",
@@ -84,6 +85,7 @@
    "write": 1
   }
  ],
+ "route": "app/nucta",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

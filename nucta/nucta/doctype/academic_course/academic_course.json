@@ -9,6 +9,10 @@
  "field_order": [
   "course_name",
   "course_code",
+  "course_sub_type",
+  "program",
+  "degree",
+  "credits",
   "max_score",
   "description",
   "column_break_ypnv",
@@ -31,8 +35,7 @@
   {
    "fieldname": "course_code",
    "fieldtype": "Data",
-   "label": "Course Code",
-   "unique": 1
+   "label": "Course Code"
   },
   {
    "fieldname": "max_score",
@@ -100,6 +103,29 @@
    "fieldname": "is_active_semester",
    "fieldtype": "Read Only",
    "label": "Is Active Semester"
+  },
+  {
+   "default": "LECT",
+   "fieldname": "course_sub_type",
+   "fieldtype": "Select",
+   "label": "Course Sub-Type",
+   "options": "LECT\nPRAC\nPROJ"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Select",
+   "label": "Degree",
+   "options": "BA\nBS"
+  },
+  {
+   "fieldname": "credits",
+   "fieldtype": "Int",
+   "label": "Credits"
   }
  ],
  "image_field": "image",
@@ -112,7 +138,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2024-10-31 14:49:30.620338",
+ "modified": "2024-11-09 21:53:32.858434",
  "modified_by": "Administrator",
  "module": "Nucta",
  "name": "Academic Course",

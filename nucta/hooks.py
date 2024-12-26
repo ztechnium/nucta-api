@@ -9,6 +9,10 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+
+fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
+
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/nucta/css/nucta.css"
 # app_include_js = "/assets/nucta/js/nucta.js"
