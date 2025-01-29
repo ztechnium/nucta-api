@@ -187,6 +187,8 @@ def enroll_to_course(activity,activity_id):
         #get the enrollment's status
         # status = frappe.get_value(doctype_name, enrollment[0]['name'], 'status')
         # return {"message": f"You are already enrolled in this course with status: {status}"}
+        if doctype_name == "Club Enrollment":
+            return {"message": "You are already enrolled in this club"}
         return {"message": "You are already enrolled in this course"}
     #create a new enrollment
     enrollment = frappe.new_doc(doctype_name)
@@ -200,6 +202,8 @@ def enroll_to_course(activity,activity_id):
     # enrollment.status = "Pending"
     enrollment.date_enrolled = frappe.utils.now()
     enrollment.save(ignore_permissions=True)
+    if doctype_name == "Club Enrollment":
+        return {"message": "You have successfully enrolled in this club"}
     return {"message": "You have successfully enrolled in this course"}
 
 

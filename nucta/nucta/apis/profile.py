@@ -20,7 +20,11 @@ def student_profile():
     college = student.college
     department = student.department
     if student.student_image:
-        student_image = current_url + student.student_image
+        #check if the student image starts with /files or /private/files
+        if student.student_image.startswith("/files") or student.student_image.startswith("/private/files"):
+            student_image = current_url + student.student_image
+        else:
+            student_image = student.student_image
     else:
         student_image = ""
     #get the student's courses numbers
